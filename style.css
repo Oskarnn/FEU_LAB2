@@ -1,3 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+        font-family: Roboto, sans-serif, Helvetica;
+        box-sizing: border-box;
+}
+
 body {
-    background-color: grey;
+    overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+     height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 6, 17, 0.3), rgba(0, 6, 17, 0.3)), url(/img/bastian_riccardi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.burger-meny {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2rem;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.bar {
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+ul {
+    display: none;
+}
+
+
+.dropdown {
+    border: #ffffff00 1px solid;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.dropdown:hover {
+    max-width: fit-content;
+    height: fit-content;
+    background-color: #fefefeee;
+    border-radius: 4px;
+    transition: 0.2s;
+
+}
+
+.dropdown:hover ul {
+    display: flex;
+    flex-direction: column
+
+}
+
+.dropdown > ul > li {
+    padding: 3vh 5vw;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dropdown > ul > li:hover {
+    background-color: #e6e6e6ee;
+    padding: 4vh 5vw;
+    transition: 0.2s;
+}
+
+
+footer {
+
+    display: flex;
+    background-color: rgba(0, 6, 17, 0.7);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+
+footer > p {
+    color: white;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
