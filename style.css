@@ -4,6 +4,7 @@
 1. ROOT-SETTINGS
 2. BACKGROUND IMG
 3. HAMBURGER-MENU
+4. INDEX.HTML MAIN-SECTION
 
 /* 1. ROOT-SETTINGS */
 
@@ -14,10 +15,10 @@
 
 body {
     overflow-x: hidden;
-     margin: 0;
-     padding: 0;
-     height: 100vh;
+    margin: 0;
+    padding: 0;
     width: 100vw;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,11 +28,11 @@ body {
 /* 2. BACKGROUND IMG */
 
 .index {
-    background-image: linear-gradient(rgba(0, 6, 17, 0.3), rgba(0, 6, 17, 0.3)), url(/img/bastian_riccardi.jpg);
+    background-image: linear-gradient(rgba(0, 6, 17, 0.7), rgba(0, 6, 17, 0.7)), url(/img/bastian_riccardi.jpg);
 }
 
 .other {
-    background-image: linear-gradient(rgba(0, 6, 17, 0.3), rgba(0, 6, 17, 0.3)), url(/img/pramod_tiwari_unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 6, 17, 0.7), rgba(0, 6, 17, 0.7)), url(/img/pramod_tiwari_unsplash.jpg);
 }
 
 /* 3. HAMBURGER-MENU */
@@ -96,14 +97,77 @@ ul {
 
 .welcome-section {
     color: white;
+    text-align: left;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
 
+.welcome-section > h1 {
+    font-size: 5rem;
+    line-height: 10vh;
+    margin: 10vh 10vw 10vh 13vw;
 }
 
 .flex-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
 
 }
 
+.flex-content {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 6, 17, 0.7);
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.flex-content > h2 {
+    margin-left: 1vw;
+    margin-right: 2vw;
+}
+
+#flex-content-3 {
+    background-color: rgba(0, 0, 0, 0.0);
+    max-width: 200px;
+}
+
+img {
+    margin-top: 1vh;
+    max-width: 130px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .welcome-section > h1 {
+        font-size: 2.5rem;
+        line-height: 10vh;
+        margin: 5vh 5vw 0vh 7vw;
+    }
+
+    .flex-content {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 6, 17, 0.7);
+        border-radius: 20px;
+        font-size: 1rem;
+        margin: 1.5vh 3vw 0 3vw;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
 
 
 footer {
