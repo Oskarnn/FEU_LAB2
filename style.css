@@ -87,6 +87,19 @@ ul {
     transition: 0.2s;
 }
 
+/* INDEX.HTML MAIN-SECTION */
+
+.welcome-section {
+    color: white;
+
+}
+
+.flex-box {
+    display: flex;
+
+}
+
+
 
 footer {
 
