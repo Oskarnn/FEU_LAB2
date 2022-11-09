@@ -24,9 +24,26 @@
     </nav>
 
     <section class="suggest-section">
-        <div class="suggest-text"></div>
+        <div class="suggest-text">
+            <h3>SUGGEST QUOTE</h3>
+            <p>HELP US GET BETTER AND SUBMIT A QUOTE FROM YOUR FAVORITE SCIENTIST OR KANYE WEST</p>
+        </div>
         <div class="suggest-input">
-            <input id="quoter" type="text" plc>
+            <form method="get" id="form">
+
+                <label for="quoter">Quoter:</label>
+                <input id="quoter" type="text" name="quoter">
+
+                <label for="quote">Quote:</label>
+                <textarea id="quote" name="quote" rows="3" cols="10"></textarea>
+
+                <label for="your-name">Your name:</label>
+
+                <input type="text" id="your-name" name="your-name">
+
+                <button type="submit" form="form" value="Submit">SUBMIT</button>
+
+            </form>
         </div>
 
     </section>
