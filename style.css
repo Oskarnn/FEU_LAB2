@@ -286,7 +286,29 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 10vh;
 }
+
+
+form > label {
+    margin-top: 2vh;
+}
+
+form > textarea {
+    background-color: lightgrey;
+    margin-top: 1vh;
+    border: none;
+    border-radius: 3px;
+}
+
+form > input {
+    background-color: lightgrey;
+    margin-top: 1vh;
+    height: 3vh;
+    border: none;
+    border-radius: 3px;
+}
+
 
 form > button {
     font-weight: 600;
