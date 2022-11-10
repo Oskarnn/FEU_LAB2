@@ -235,6 +235,13 @@ img {
     grid-row: 1/4;
 }
 
+#awnser {
+    display: none;
+    font-size: 1.8rem;
+    grid-row: 3;
+    margin: 0 0 1rem .5rem;
+}
+
 #quoter-hidden {
     width: 7vw;
     height: 7vh;
