@@ -221,7 +221,6 @@ img {
 }
 
 #grid-box {
-
     width: 1vw;
     height: 3vh;
     grid-column: 3;
@@ -239,6 +238,13 @@ img {
     width: 7vw;
     height: 7vh;
     grid-row: 3;
+}
+
+#awnser {
+    display: none;
+    font-size: 1.8rem;
+    grid-row: 3;
+    margin: 0 0 1rem .5rem;
 }
 
 .btn-container {
