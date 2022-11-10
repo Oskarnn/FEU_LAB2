@@ -8,6 +8,7 @@ INNEHÅLLSFÖRTECKNING
 3. HAMBURGER-MENU
 4. INDEX.HTML MAIN-SECTION
 5. GAMESITE
+6. RESULT
 */
 
 /* 1. ROOT-SETTINGS */
@@ -253,6 +254,37 @@ img {
     border: none;
     border-radius: 5px;
     margin: 1vh 1vw;
+}
+
+/* 6. RESULT */
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-section h2, p {
+    color: #ffffff;
+}
+
+.result-section h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.result-section p {
+    font-size: 3.5rem;
+}
+
+#play {
+    width: 6rem;
+}
+
+#party {
+    margin-top: 10vh;
+    margin-left: 3vw;
 }
 
 /* FOOTER */
