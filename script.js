@@ -4,6 +4,7 @@
 2. Quote awnser script
 3. Quote counter
 4. Score counter
+5. Form script
 */
 
 /* 1. Random quote generator */
@@ -199,9 +200,7 @@ btnNotKanye?.addEventListener('click', () => {
    }
 })
 
-// FORM SCRIPT
-
-//  POST-funktion för quoter och quote
+// 5. Form script
 
 
 let  = document.querySelector('.suggest-text > h3')
@@ -275,5 +274,3 @@ else if (suggestQuote === "" && quoter !== "") {
 }
 
 submitbtn.addEventListener('click', post);
-
-// fixa checkbox localStorage mot "your name"
