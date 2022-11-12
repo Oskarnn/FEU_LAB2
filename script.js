@@ -180,32 +180,35 @@ btnContainer?.addEventListener('click', () =>{
 
 /* 4. Score counter */
 
+let score = 0
 
-//points.value = 0
-//points.textContent = points.value
-console.log(document.querySelector('#result-container'))
+btnKanye?.addEventListener('click', () => {
 
-btnContainer?.addEventListener('click', () => {
-
-    if(btnKanye.style.backgroundColor || btnNotKanye.style.backgroundColor === 'green') {
-        points.value ++
-        points.textContent = points.value
-    }
+    if(awnser.textContent === 'Kanye West'){
+        score ++
+        console.log(score)
+   }
 })
 
+btnNotKanye?.addEventListener('click', () => {
 
+    if(awnser.textContent !== 'Kanye West'){
+        score ++
+        console.log(score)
+   }
+})
 
+sessionStorage.setItem('result', score)
 
+let result = sessionStorage.getItem('result')
 
-
-
-
+console.log(result)
 
 
 // FORM SCRIPT
 
 //  POST-funktion för quoter och quote
-
+/*
 
 let submitbtn = document.querySelector('#submit');
 
@@ -272,3 +275,4 @@ else if (suggestQuote === "" && quoter !== "") {
 submitbtn.addEventListener('click', post);
 
 // fixa checkbox localStorage mot "your name"
+*/
