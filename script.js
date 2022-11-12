@@ -180,30 +180,24 @@ btnContainer?.addEventListener('click', () =>{
 
 /* 4. Score counter */
 
-let score = 0
+sessionStorage.setItem('result', 0)
+let p = 0
 
 btnKanye?.addEventListener('click', () => {
 
     if(awnser.textContent === 'Kanye West'){
-        score ++
-        console.log(score)
+        p ++
+        sessionStorage.setItem('result', p)
    }
 })
 
 btnNotKanye?.addEventListener('click', () => {
 
     if(awnser.textContent !== 'Kanye West'){
-        score ++
-        console.log(score)
+        p ++
+        sessionStorage.setItem('result', p)
    }
 })
-
-sessionStorage.setItem('result', score)
-
-let result = sessionStorage.getItem('result')
-
-console.log(result)
-
 
 // FORM SCRIPT
 
