@@ -53,7 +53,7 @@ let btnNotKanye = document.querySelector('#not-kanye')
 
 let sign = document.querySelector('#quoter-hidden')
 
-btnKanye.addEventListener('click', () => {
+btnKanye?.addEventListener('click', () => {
 
     awnser.style.display = 'block'
     sign.style.display = 'none'
@@ -66,7 +66,7 @@ btnKanye.addEventListener('click', () => {
 
 /* Reset function */
 
-   setTimeout(function () {
+  setTimeout(function () {
 
         btnKanye.style.backgroundColor = '#C28323'
 
@@ -103,10 +103,10 @@ btnKanye.addEventListener('click', () => {
 
         console.log(awnser.textContent)
 
-    }, 4000)
+  }, 3000)
 })
 
-btnNotKanye.addEventListener('click', () => {
+btnNotKanye?.addEventListener('click', () => {
 
     awnser.style.display = 'block'
     sign.style.display = 'none'
@@ -156,7 +156,7 @@ btnNotKanye.addEventListener('click', () => {
 
         console.log(awnser.textContent)
 
-    }, 4000)
+    }, 3000)
 })
 
 // FORM SCRIPT
@@ -184,9 +184,9 @@ function post() {
 
   let quoter = document.querySelector('#quoter').value;
 
-  let quote = document.querySelector('#quote').value;
+  let suggestQuote = document.querySelector('#suggest-quote').value;
 
-if (quote !== "" && quoter !== "") {
+if (suggestQuote !== "" && quoter !== "") {
   quoterError.style.display = 'none';
   quoteError.style.display = 'none';
 // fetch('https://avancera.app/cities/', {
@@ -204,17 +204,18 @@ if (quote !== "" && quoter !== "") {
 
 
 }
-else if (quote !== "" && quoter === "") {
+else if (suggestQuote !== "" && quoter === "") {
  quoterError.style.display = 'block';
  quoteError.style.display = 'none';
 }
 
-else if (quote === "" && quoter !== "") {
+else if (suggestQuote === "" && quoter !== "") {
   quoteError.style.display = 'block';
   quoterError.style.display = 'none';
 
  }
  else {
+
 
   quoteError.style.display = 'block';
   quoterError.style.display = 'block';
