@@ -208,7 +208,9 @@ console.log(result)
 // FORM SCRIPT
 
 //  POST-funktion för quoter och quote
-/*
+
+
+let  = document.querySelector('.suggest-text > h3')
 
 let submitbtn = document.querySelector('#submit');
 
@@ -218,9 +220,9 @@ let quoterError = document.querySelector('#quoterError');
 
 let checkbox = document.querySelector('#checkbox');
 
-
 let yourName = document.querySelector('#your-name');
 
+yourName.value = localStorage.getItem('savedName');
 
 
 
@@ -235,18 +237,21 @@ function post() {
 if (suggestQuote !== "" && quoter !== "") {
   quoterError.style.display = 'none';
   quoteError.style.display = 'none';
-// fetch('https://avancera.app/cities/', {
-//    body: JSON.stringify({ name: quote, population: parseInt(quoter) }),
-//   headers: {'Content-Type': 'application/json'},
-//    method: 'POST'
-//   })
+  document.querySelector('.suggest-text > h3').innerHTML = "THANKS!";
+  document.querySelector('.suggest-text > p').innerHTML = "Thank you for helping us get better!";
+
+fetch('https://avancera.app/cities/', {
+   body: JSON.stringify({ name: suggestQuote, population: parseInt(quoter) }),
+  headers: {'Content-Type': 'application/json'},
+   method: 'POST'
+  })
 
 
-// .then(response => response.json())
+.then(response => response.json())
 
-//   .then(result => {
-//   console.log(result)
-//   });
+  .then(result => {
+  console.log(result)
+  });
 
 
 }
@@ -270,9 +275,11 @@ else if (suggestQuote === "" && quoter !== "") {
     localStorage.setItem('savedName', name)
     console.log(localStorage.getItem('savedName'));
   }
+  else {
+    localStorage.setItem('savedName', "");
+  }
 }
 
 submitbtn.addEventListener('click', post);
 
 // fixa checkbox localStorage mot "your name"
-*/
