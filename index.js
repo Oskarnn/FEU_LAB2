@@ -2,6 +2,8 @@
 
 1. Random quote generator
 2. Quote awnser script
+3. Quote counter
+4. Score counter
 */
 
 /* 1. Random quote generator */
@@ -64,7 +66,7 @@ btnKanye?.addEventListener('click', () => {
         btnKanye.style.backgroundColor = 'green'
    }
 
-/* Reset function */
+/* Reset function "Kanye" */
 
   setTimeout(function () {
 
@@ -103,7 +105,7 @@ btnKanye?.addEventListener('click', () => {
 
         console.log(awnser.textContent)
 
-  }, 3000)
+  }, 1000)
 })
 
 btnNotKanye?.addEventListener('click', () => {
@@ -117,7 +119,7 @@ btnNotKanye?.addEventListener('click', () => {
         btnNotKanye.style.backgroundColor = 'green'
    }
 
-/* Reset function */
+/* Reset function "Not Kanye" */
 
     setTimeout(function () {
 
@@ -156,8 +158,49 @@ btnNotKanye?.addEventListener('click', () => {
 
         console.log(awnser.textContent)
 
-    }, 3000)
+    }, 1000)
 })
+
+/* 3. Quote counter */
+
+let countDown = document.querySelector('#quizNumber')
+let btnContainer = document.querySelector('.btn-container')
+
+countDown.value = 1
+countDown.textContent = countDown.value
+
+
+btnContainer?.addEventListener('click', () =>{
+        countDown.value ++
+        countDown.textContent = countDown.value
+        if(countDown.value === 10){
+            window.location.href = "result.html";
+        }
+})
+
+/* 4. Score counter */
+
+
+//points.value = 0
+//points.textContent = points.value
+console.log(document.querySelector('#party'))
+
+btnContainer?.addEventListener('click', () => {
+
+    if(btnKanye.style.backgroundColor || btnNotKanye.style.backgroundColor === 'green') {
+        points.value ++
+        points.textContent = points.value
+    }
+})
+
+
+
+
+
+
+
+
+
 
 // FORM SCRIPT
 
