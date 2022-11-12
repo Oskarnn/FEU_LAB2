@@ -183,7 +183,7 @@ btnContainer?.addEventListener('click', () =>{
 
 //points.value = 0
 //points.textContent = points.value
-console.log(document.querySelector('#party'))
+console.log(document.querySelector('#result-container'))
 
 btnContainer?.addEventListener('click', () => {
 
