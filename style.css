@@ -43,61 +43,79 @@ body {
 
 /* 3. HAMBURGER-MENU */
 
+.dropdown {
+    display: block;
+    position: fixed;
+    left: -100%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+}
+.dropdown > ul {
+ display: flex;
+ flex-direction: column;
+
+}
+.dropdown > ul > li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    margin:4vh 0 3vh 0;
+}
+
+
+.dropdown ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown.active {
+    left: 0;
+}
+
 .burger-meny {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 3rem;
-    height: 2rem;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    cursor: pointer;
+    width: fit-content;
+    top: 0;
+    margin: 1vh 0 0 1vh;
+    position: fixed;
+
+}
+
+.burger-meny.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-meny.active .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.burger-meny.active .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 .bar {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-ul {
-    display: none;
-}
-
-
-.dropdown {
-    border: #ffffff00 1px solid;
-    width: fit-content;
-    height: fit-content;
-
-}
-
-.dropdown:hover {
-    max-width: fit-content;
-    height: fit-content;
-    background-color: #fefefeee;
-    border-radius: 4px;
-    transition: 0.2s;
-
-}
-
-.dropdown:hover ul {
     display: flex;
-    flex-direction: column
-
+    width: 35px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.dropdown > ul > li {
-    padding: 3vh 5vw;
-    list-style: none;
-    text-decoration: none;
+.bar:hover {
+    background-color: rgba(255 , 255, 255, 0.1);
+    transition: 0.1s;
 }
 
-.dropdown > ul > li:hover {
-    background-color: #e6e6e6ee;
-    padding: 4vh 5vw;
-    transition: 0.2s;
-}
 
 /* 4. INDEX.HTML MAIN-SECTION */
 

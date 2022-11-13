@@ -1,13 +1,24 @@
 /* INNEHÅLLSFÖRTECKNING
 
-1. Random quote generator
-2. Quote awnser script
-3. Quote counter
-4. Score counter
-5. Form script
+1. Hamburger meny
+2. Random quote generator
+3. Quote awnser script
+4. Quote counter
+5. Score counter
+6. Form script
 */
 
-/* 1. Random quote generator */
+/*1. Hamburger menu */
+let burgerMenu = document.querySelector('.burger-meny');
+
+let dropdownMenu = document.querySelector('.dropdown');
+
+burgerMenu?.addEventListener('click', () => {
+    burgerMenu.classList.toggle("active");
+    dropdownMenu.classList.toggle("active");
+});
+
+/* 2. Random quote generator */
 
 let randomQuote = document.querySelector('#quote')
 let awnser = document.querySelector('#awnser')
@@ -49,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-/* 2. Quote awnser script */
+/* 3. Quote awnser script */
 
 let btnKanye = document.querySelector('#kanye')
 let btnNotKanye = document.querySelector('#not-kanye')
@@ -162,7 +173,7 @@ btnNotKanye?.addEventListener('click', () => {
     }, 1000)
 })
 
-/* 3. Quote counter */
+/* 4. Quote counter */
 
 let countDown = document.querySelector('#quizNumber')
 let btnContainer = document.querySelector('.btn-container')
@@ -179,7 +190,7 @@ btnContainer?.addEventListener('click', () =>{
         }
 })
 
-/* 4. Score counter */
+/* 5. Score counter */
 
 sessionStorage.setItem('result', 0)
 let p = 0
@@ -200,7 +211,7 @@ btnNotKanye?.addEventListener('click', () => {
    }
 })
 
-// 5. Form script
+// 6. Form script
 
 
 let  = document.querySelector('.suggest-text > h3')
