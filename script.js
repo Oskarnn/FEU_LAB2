@@ -230,8 +230,8 @@ yourName.value = localStorage.getItem('savedName');
 
 
 
-function post() {
 
+function post() {
   let name = yourName.value;
 
   let quoter = document.querySelector('#quoter').value;
@@ -243,6 +243,8 @@ if (suggestQuote !== "" && quoter !== "") {
   quoteError.style.display = 'none';
   document.querySelector('.suggest-text > h3').innerHTML = "THANKS!";
   document.querySelector('.suggest-text > p').innerHTML = "Thank you for helping us get better!";
+  submitbtn.classList.add('onclick');
+
 
 fetch('https://avancera.app/cities/', {
    body: JSON.stringify({ name: suggestQuote, population: parseInt(quoter) }),
@@ -262,11 +264,13 @@ fetch('https://avancera.app/cities/', {
 else if (suggestQuote !== "" && quoter === "") {
  quoterError.style.display = 'block';
  quoteError.style.display = 'none';
+ submitbtn.classList.add('errorClick');
 }
 
 else if (suggestQuote === "" && quoter !== "") {
   quoteError.style.display = 'block';
   quoterError.style.display = 'none';
+  submitbtn.classList.add('errorClick');
 
  }
  else {
@@ -274,6 +278,7 @@ else if (suggestQuote === "" && quoter !== "") {
 
   quoteError.style.display = 'block';
   quoterError.style.display = 'block';
+  submitbtn.classList.add('errorClick');
  }
   if (checkbox.checked == true) {
     localStorage.setItem('savedName', name)
