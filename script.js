@@ -203,11 +203,13 @@ countDown.textContent = countDown.value
 
 
 btnContainer?.addEventListener('click', () =>{
-        countDown.value ++
-        countDown.textContent = countDown.value
-        if(countDown.value === 10){
-            window.location.href = "result.html";
-        }
+    setTimeout(function () {
+            countDown.value ++
+            countDown.textContent = countDown.value
+            if(countDown.value === 10){
+                window.location.href = "result.html";
+            }
+    }, 1000)
 })
 
 /* 6. Score counter */
