@@ -56,7 +56,6 @@ body {
 .dropdown > ul {
  display: flex;
  flex-direction: column;
- margin-top: 0;
 }
 .dropdown > ul > li {
     list-style: none;
@@ -75,6 +74,7 @@ body {
 
 .dropdown.active {
     left: 0;
+
 }
 
 .burger-meny {
@@ -84,7 +84,6 @@ body {
     width: fit-content;
     top: 0;
     margin: 1vh 0 0 1vh;
-    position: fixed;
 
 }
 
