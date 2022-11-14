@@ -283,6 +283,7 @@ img {
 }
 
 .result-section p {
+    margin: 1.5rem;
     font-size: 3.5rem;
 }
 
