@@ -84,7 +84,6 @@ body {
     width: fit-content;
     top: 0;
     margin: 1vh 0 0 1vh;
-
 }
 
 .burger-meny.active .bar:nth-child(2) {
@@ -123,12 +122,12 @@ body {
 }
 
 @keyframes gameAnimation {
-    100% {width: 8vw;}
+    100% {width: 145px;}
 }
 
 @keyframes gameAfterAnimation {
-    0% {width: 8vw;}
-    100% {width: 0vw;}
+    0% {width: 145px;}
+    100% {width: 0;}
 }
 
 /* hover SUGGEST */
@@ -144,12 +143,12 @@ body {
 }
 
 @keyframes suggestAnimation {
-    100% {width: 12.5vw;}
+    100% {width: 220px;}
 }
 
 @keyframes suggestAfterAnimation {
-    0% {width: 12.5vw;}
-    100% {width: 0vw;}
+    0% {width: 220px;}
+    100% {width: 0;}
 }
 
 /* hover HOME */
@@ -165,12 +164,12 @@ body {
 }
 
 @keyframes homeAnimation {
-    100% {width: 8vw;}
+    100% {width: 145px;}
 }
 
 @keyframes homeAfterAnimation {
-    0% {width: 8vw;}
-    100% {width: 0vw;}
+    0% {width: 145px;}
+    100% {width: 0;}
 }
 
 

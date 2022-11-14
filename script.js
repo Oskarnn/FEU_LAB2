@@ -257,6 +257,8 @@ function post() {
   let quoter = document.querySelector('#quoter').value;
 
   let suggestQuote = document.querySelector('#suggest-quote').value;
+  submitbtn.classList.remove('onclick');
+  submitbtn.classList.remove('errorClick');
 
 if (suggestQuote !== "" && quoter !== "") {
   quoterError.style.display = 'none';
@@ -294,8 +296,6 @@ else if (suggestQuote === "" && quoter !== "") {
 
  }
  else {
-
-
   quoteError.style.display = 'block';
   quoterError.style.display = 'block';
   submitbtn.classList.add('errorClick');
@@ -303,9 +303,6 @@ else if (suggestQuote === "" && quoter !== "") {
   if (checkbox.checked == true) {
     localStorage.setItem('savedName', name)
     console.log(localStorage.getItem('savedName'));
-  }
-  else {
-    localStorage.setItem('savedName', "");
   }
 }
 
