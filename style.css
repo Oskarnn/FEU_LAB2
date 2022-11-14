@@ -73,6 +73,15 @@ body {
     color: white;
 }
 
+.dropdown ul > li > a:hover {
+    animation: menuAnimation 3s;
+}
+
+@keyframes menuAnimation {
+    0% {}
+    50% {}
+}
+
 .dropdown.active {
     left: 0;
 }
@@ -150,6 +159,17 @@ body {
     margin-right: 3vw;
 }
 
+#flex-content-1:hover {
+    animation: rulesAnimation 3s;
+    background-color: rgba(40, 5, 80, 0.7);
+}
+
+@keyframes rulesAnimation {
+    0% {background-color: rgba(0, 6, 17, 0.7);}
+    50% {background-color: rgba(40, 5, 80, 0.7);}
+}
+
+
 .flex-content > h2 {
     margin-left: 1vw;
     margin-right: 2vw;
@@ -163,6 +183,16 @@ body {
 img {
     margin-top: 1vh;
     max-width: 130px;
+}
+
+.play:hover{
+    animation: imgAnimation 1s infinite;
+}
+
+@keyframes imgAnimation {
+    0% {margin: 1vh 0 0vh 0vw;}
+    50% {margin: 1vh 0 0vh 1vw;}
+    100% {margin: 1vh 0 0vh 0vw;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -300,9 +330,17 @@ img {
     margin-bottom: 0;
 }
 
+#play-again {
+    display: none;
+}
+
 .result-section p {
     margin: 1.5rem;
     font-size: 3.5rem;
+}
+
+#questionmark {
+    display: none;
 }
 
 #play {
