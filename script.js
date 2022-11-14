@@ -251,7 +251,7 @@ yourName.value = localStorage.getItem('savedName');
 
 
 
-function post() {
+submitbtn?.addEventListener ('click', () => {
   let name = yourName.value;
 
   let quoter = document.querySelector('#quoter').value;
@@ -304,6 +304,4 @@ else if (suggestQuote === "" && quoter !== "") {
     localStorage.setItem('savedName', name)
     console.log(localStorage.getItem('savedName'));
   }
-}
-
-submitbtn.addEventListener('click', post);
+})
