@@ -1,3 +1,14 @@
+/* Hamburger menu*/
+
+let burgerMenu = document.querySelector('.burger-meny');
+
+let dropdownMenu = document.querySelector('.dropdown');
+
+burgerMenu?.addEventListener('click', () => {
+    burgerMenu.classList.toggle("active");
+    dropdownMenu.classList.toggle("active");
+});
+
 /* Score presentation */
 
 let result = sessionStorage.getItem('result')
@@ -38,4 +49,4 @@ playButton.addEventListener('mouseleave', () => {
         questionmark.style.display = 'none'
         oldPoints.style.display = 'block'
 
-})
+});
