@@ -1,12 +1,10 @@
 /* INNEHÅLLSFÖRTECKNING
 
 1. Hamburger meny
-2. Rules
-3. Random quote generator
-4. Quote awnser script
-5. Quote counter
-6. Score counter
-7. Form script
+2. Random quote generator
+3. Quote awnser script
+4. Quote counter
+5. Score counter
 */
 
 /* 1. Hamburger menu */
@@ -19,26 +17,7 @@ burgerMenu?.addEventListener('click', () => {
     dropdownMenu.classList.toggle("active");
 });
 
-/* 2. Rules */
-/*
-let readBox = document.querySelector('#flex-content-1')
-let guessBox = document.querySelector('#flex-content-2')
-let h1 = document.querySelector('.welcome-section > h1')
-let rulesTextArea = document.querySelector('#rules-text-area')
-
-let background = document.querySelector('.index')
-
-readBox?.addEventListener('mouseenter', () => {
-    h1.style.display = 'none'
-    rulesTextArea.style.display = 'block'
-})
-
-readBox?.addEventListener('mouseleave', () => {
-    h1.style.display = 'block'
-    rulesTextArea.style.display = 'none'
-})
-*/
-/* 3. Random quote generator */
+/* 2. Random quote generator */
 
 let randomQuote = document.querySelector('#quote')
 let awnser = document.querySelector('#awnser')
@@ -80,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-/* 4. Quote awnser script */
+/* 3. Quote awnser script */
 
 let btnKanye = document.querySelector('#kanye')
 let btnNotKanye = document.querySelector('#not-kanye')
@@ -193,7 +172,7 @@ btnNotKanye?.addEventListener('click', () => {
     }, 1000)
 })
 
-/* 5. Quote counter */
+/* 4. Quote counter */
 
 let countDown = document.querySelector('#quizNumber')
 let btnContainer = document.querySelector('.btn-container')
@@ -212,7 +191,7 @@ btnContainer?.addEventListener('click', () =>{
     }, 1000)
 })
 
-/* 6. Score counter */
+/* 5. Score counter */
 
 sessionStorage.setItem('result', 0)
 let p = 0

@@ -567,6 +567,11 @@ img {
     margin-top: 2vh;
 }
 
+#submit:hover {
+    background-color: #e2a02c;
+    cursor: pointer;
+}
+
 #submit.onclick{
     animation: submitAnimation 3s ease;
 }
